@@ -1,6 +1,7 @@
 ---
 layout: about
-title: Rong Qian（钱蓉）
+align: right
+title: Rong Qian(钱蓉)
 permalink: /
 subtitle: >
   Research Assistant at <a href="https://www.hkbu.edu.hk/">Hong Kong Baptist University.</a>
@@ -9,12 +10,12 @@ profile:
   align: left
   svg: rohandebsarkar.svg
   image: qianrong0709.png
-  address: >
-    <p>Kolkata, West Bengal,<br /> Union of India</p>
+  #address: >
+   # <p>Kolkata, West Bengal,<br /> Union of India</p>
 
-news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+news: true  # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
 Hello! this is Rohan Deb Sarkar. Welcome to my website.
