@@ -1,14 +1,14 @@
 ---
 layout: about
-title: Rohan Deb Sarkar
+title: Rong Qian（钱蓉）
 permalink: /
 subtitle: >
-  Undergarduate physics student at <a href="https://rkmvccrahara.org">Ramakrishna Mission Vivekananda Centenary College</a>
+  Research Assistant at <a href="https://www.hkbu.edu.hk/">Hong Kong Baptist University.</a>
 
 profile:
-  align: right
+  align: left
   svg: rohandebsarkar.svg
-  image: rohandebsarkar.png
+  image: qianrong0709.png
   address: >
     <p>Kolkata, West Bengal,<br /> Union of India</p>
 
