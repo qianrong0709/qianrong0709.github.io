@@ -1,14 +1,13 @@
 ---
 layout: about
-align: right
-title: Rong Qian(钱蓉)
+title: Rong Qian
 permalink: /
 subtitle: >
   Research Assistant at <a href="https://www.hkbu.edu.hk/">Hong Kong Baptist University.</a>
 
 profile:
-  align: left
-  svg: qianrong0709.svg
+  align: right
+  #svg: qianrong0709.svg
   image: qianrong0709.png
   #address: >
    # <p>Kolkata, West Bengal,<br /> Union of India</p>
