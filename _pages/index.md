@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: left
-  svg: rohandebsarkar.svg
+  svg: qianrong0709.svg
   image: qianrong0709.png
   #address: >
    # <p>Kolkata, West Bengal,<br /> Union of India</p>
