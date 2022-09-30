@@ -9,8 +9,8 @@ profile:
   align: right
   #svg: qianrong0709.svg
   image: qianrong0709.png
-  #address: >
-   # <p>Kolkata, West Bengal,<br /> Union of India</p>
+  address: >
+    <p>Research Assistant @ HKBU</p>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -18,10 +18,10 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-__Research__: As a researcher in machine learning, I am focused on developing scalable methods for modeling, analyzing and generating complex, high-dimensional data. My interest spans multiple areas, including generative modeling, representation learning, probabilistic inference, AI safety, and AI for science. My ultimate goal is to address problems that have wide-ranging significance, develop methods that are both accessible and effective, and build intelligent systems that can improve human lives.
+<b>Research</b>: As a researcher in machine learning, I am focused on developing scalable methods for modeling, analyzing and generating complex, high-dimensional data. My interest spans multiple areas, including generative modeling, representation learning, probabilistic inference, AI safety, and AI for science. My ultimate goal is to address problems that have wide-ranging significance, develop methods that are both accessible and effective, and build intelligent systems that can improve human lives.
 
 
-__Previously__: I received my Ph.D. in Computer Science from Stanford University, advised by Stefano Ermon. I was a research intern at Google Brain, Uber ATG, and Microsoft Research. I obtained my Bachelor’s degree in Mathematics and Physics from Tsinghua University, where I worked with Jun Zhu, Raquel Urtasun, and Richard Zemel.
+Previously: I received my Ph.D. in Computer Science from Stanford University, advised by Stefano Ermon. I was a research intern at Google Brain, Uber ATG, and Microsoft Research. I obtained my Bachelor’s degree in Mathematics and Physics from Tsinghua University, where I worked with Jun Zhu, Raquel Urtasun, and Richard Zemel.
 
 Hello! this is Rohan Deb Sarkar. Welcome to my website.
 
