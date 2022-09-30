@@ -10,10 +10,10 @@ email: qianrong0709@hkbu.edu.hk
 tagline: >
   ``I believe in education as a weapon to make this world a better place for everyone.´´
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Rohan Deb Sarkar's portfolio website.
+  Rong's portfolio website.
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" class="umami--click--jekyll-link">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" class="umami--click--al-folio-link">al-folio</a> theme &bull; Hosted on <a href="https://pages.github.com/" class="umami--click--gh-pages-link">GitHub Pages</a>
-keywords: rohandebsarkar # add your own keywords or leave empty
+keywords: Rong # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
