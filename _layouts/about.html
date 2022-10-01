@@ -20,7 +20,7 @@ layout: default
           <div class="profile float-{%- if page.profile.align == 'left' -%}start{%- else -%}end{%- endif -%}">
             {%- if page.profile.svg -%}
               {%- assign profile_svg_path = page.profile.svg | prepend: 'assets/svg/' -%}
-              <object data={{ profile_svg_path }} type="image/svg+xml" width="10" height="20" title={{ page.profile.svg }}>
+              <object data={{ profile_svg_path }} type="image/svg+xml" width="auto" height="auto" title={{ page.profile.svg }}>
               </object>
             {%- elsif page.profile.image %}
               {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
