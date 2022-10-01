@@ -7,8 +7,7 @@ first_name: Rong
 middle_name: 
 last_name: Qian(钱蓉)
 email: qianrong0709@hkbu.edu.hk
-tagline: >
-  ``I believe in education as a weapon to make this world a better place for everyone.´´
+
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Rong's portfolio website.
 footer_text: >
@@ -70,7 +69,7 @@ github_username: qianrong0709 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username:  # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: https://scholar.google.com/citations?user=q2r2jrsAAAAJ&hl=zh-CN # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
