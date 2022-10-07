@@ -18,11 +18,11 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 
-<b>Research</b>: 
-      🔭  I’m currently working on applications of deep learning for moculelar generation and optimization. 
-      🌱  I’m currently learning deep generative models.  
-      👨‍💻  My interest spans multiple areas, including generative modeling, representation learning, knowledge graph, NLP and AI for science. 
+<b>Research</b>: <br>
+      🔭  I’m currently working on applications of deep learning for moculelar generation and optimization. <br>
+      🌱  I’m currently learning deep generative models.  <br>
+      👨‍💻  My interest spans multiple areas, including generative modeling, representation learning, knowledge graph, NLP and AI for science. <br>
 
 
 <b>Education</b>: 
-      
+
