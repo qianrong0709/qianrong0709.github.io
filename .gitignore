@@ -15,9 +15,11 @@ package-lock.json
 # Ignore the vendor file at root level and bundle for alternative installation
 /vendor/
 .bundle/
+.bundle-home/
 
 # Ignore folders related to IDEs
 .vscode/
+.idea/
 
 # Ignore files created by MacOS
 .DS_Store
