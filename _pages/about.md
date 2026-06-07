@@ -1,68 +1,96 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About Me"
+excerpt: "Rong Qian"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<p class="intro-lede">
-I am <strong>Rong Qian</strong>, a PhD student at <strong>Hong Kong Baptist University</strong>, working on <strong>AI for Drug Discovery (AIDD)</strong> and <strong>Molecular Generation</strong>.
-</p>
-
-My current research focuses on generative models for molecular design. I am especially interested in generation methods driven by physical principles and lower-level molecular knowledge, including <strong>Electronic Density</strong>-aware generation, dynamic molecular generation, and structure-aware molecular modeling.
-
-Before my PhD, I worked on natural language processing and knowledge graphs during my master's study at the School of Computer Science, Beijing Information Science and Technology University, advised by Prof. Xia Hou. This background also shapes my broader interest in AI for Science.
-
-<ul class="research-tags">
-  <li>AIDD</li>
-  <li>AI for Science</li>
-  <li>Molecular Generation</li>
-  <li>Physics-Driven Generation</li>
-  <li>Electronic Density</li>
-  <li>Dynamic Molecular Generation</li>
-  <li>Protein Design</li>
-  <li>Molecular Representation Learning</li>
-  <li>Knowledge Graphs</li>
-</ul>
-
-## Research
-
-<div class="info-grid">
-  <div class="info-panel">
-    <h3><i class="fas fa-atom" aria-hidden="true"></i> Molecular Generation</h3>
-    <p>Generative modeling for molecular design, with an emphasis on physical constraints, molecular structure, and chemically meaningful generation.</p>
+<section class="home-hero">
+  <p class="hero-kicker">AI for Drug Discovery · Molecular Generation</p>
+  <h1>Rong Qian</h1>
+  <p class="intro-lede">
+    I am a PhD student at <strong>Hong Kong Baptist University</strong>, working on <strong>AI for Drug Discovery (AIDD)</strong> with a focus on <strong>Molecular Generation</strong>.
+  </p>
+  <p>
+    My research explores generative models for molecular design, especially methods guided by physical principles and lower-level molecular knowledge, including <strong>Electronic Density</strong>, dynamic molecular processes, and structure-aware molecular modeling.
+  </p>
+  <div class="home-actions">
+    <a href="/publications/" class="pill-link"><i class="fas fa-book-open" aria-hidden="true"></i> Publications</a>
+    <a href="/cv/" class="pill-link"><i class="ai ai-cv" aria-hidden="true"></i> CV</a>
+    <a href="mailto:qianrong0709@gmail.com" class="pill-link"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
   </div>
-  <div class="info-panel">
-    <h3><i class="fas fa-dna" aria-hidden="true"></i> Protein and Molecular Systems</h3>
-    <p>Broader interests include protein design, molecular representation learning, and protein-ligand interaction modeling.</p>
+</section>
+
+<section class="home-section">
+  <div class="section-heading">
+    <p>Research</p>
+    <h2>Interests</h2>
   </div>
-  <div class="info-panel">
-    <h3><i class="fas fa-diagram-project" aria-hidden="true"></i> AI for Science</h3>
-    <p>I am interested in how AI methods connect symbolic, structural, and physical knowledge in scientific discovery.</p>
+  <ul class="research-tags research-tags--large">
+    <li>AIDD</li>
+    <li>AI for Science</li>
+    <li>Molecular Generation</li>
+    <li>Physics-Informed AI</li>
+    <li>Electronic Density</li>
+    <li>Dynamic Molecular Modeling</li>
+    <li>Protein Design</li>
+    <li>Molecular Representation Learning</li>
+    <li>Knowledge Graphs</li>
+  </ul>
+
+  <div class="research-card-grid">
+    <article class="research-card">
+      <i class="fas fa-atom" aria-hidden="true"></i>
+      <h3>Molecular Generation</h3>
+      <p>Generative modeling for molecular design with attention to chemical validity, molecular geometry, and physical constraints.</p>
+    </article>
+    <article class="research-card">
+      <i class="fas fa-wave-square" aria-hidden="true"></i>
+      <h3>Physical Signals</h3>
+      <p>Interest in using lower-level molecular information, such as Electronic Density and dynamic behavior, to guide generation.</p>
+    </article>
+    <article class="research-card">
+      <i class="fas fa-diagram-project" aria-hidden="true"></i>
+      <h3>Knowledge and Structure</h3>
+      <p>Previous training in NLP and Knowledge Graphs motivates my interest in connecting symbolic, structural, and learned representations.</p>
+    </article>
   </div>
-</div>
+</section>
 
-## Education and Advising
+<section class="home-section">
+  <div class="section-heading">
+    <p>Selected</p>
+    <h2>Publications</h2>
+  </div>
+  <div class="publication-preview-list">
+    {% assign selected_publications = site.publications | sort: "date" | reverse %}
+    {% for post in selected_publications limit: 2 %}
+      <article class="publication-preview">
+        <p class="publication-venue">{{ post.venue }}</p>
+        <h3><a href="{{ post.paperurl | default: post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-<ul class="timeline-list">
-  <li>
-    <strong>PhD Student, AI for Drug Discovery</strong>
-    <span class="meta-line">Hong Kong Baptist University</span>
-    <span class="meta-line">Joint supervisors: Prof. Dongsheng Cao (Central South University), Prof. Aiping Lu (HKBU), and Prof. Jin Liu (HKBU)</span>
-  </li>
-  <li>
-    <strong>Master's Study, Computer Science</strong>
-    <span class="meta-line">School of Computer Science, Beijing Information Science and Technology University</span>
-    <span class="meta-line">Advisor: Prof. Xia Hou; research area: natural language processing and knowledge graphs</span>
-  </li>
-</ul>
-
-## Contact
-
-<ul class="compact-list">
-  <li><i class="fas fa-envelope fa-fw" aria-hidden="true"></i> <a href="mailto:qianrong0709@gmail.com">qianrong0709@gmail.com</a></li>
-  <li><i class="fas fa-location-dot fa-fw" aria-hidden="true"></i> Hong Kong</li>
-</ul>
+<section class="home-section">
+  <div class="section-heading">
+    <p>Background</p>
+    <h2>Education and Advising</h2>
+  </div>
+  <ul class="timeline-list">
+    <li>
+      <strong>PhD Student, AI for Drug Discovery</strong>
+      <span class="meta-line">Hong Kong Baptist University</span>
+      <span class="meta-line">Joint supervisors: Prof. Dongsheng Cao (Central South University), Prof. Aiping Lu (HKBU), and Prof. Jin Liu (HKBU)</span>
+    </li>
+    <li>
+      <strong>Master's Study, Computer Science</strong>
+      <span class="meta-line">School of Computer Science, Beijing Information Science and Technology University</span>
+      <span class="meta-line">Advisor: Prof. Xia Hou; research area: Natural Language Processing (NLP) and Knowledge Graphs</span>
+    </li>
+  </ul>
+</section>
