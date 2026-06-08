@@ -8,8 +8,8 @@ redirect_from:
 ---
 
 <section class="home-hero">
-  <p class="hero-kicker">AI for Drug Discovery · Molecular Generation</p>
-  <h1>Rong Qian</h1>
+  <h1>About</h1>
+  <p class="name-line">Rong Qian <span>钱蓉</span></p>
   <p class="intro-lede">
     I am a PhD student at <strong>Hong Kong Baptist University</strong>, working on <strong>AI for Drug Discovery (AIDD)</strong> with a focus on <strong>Molecular Generation</strong>.
   </p>
@@ -18,9 +18,26 @@ redirect_from:
   </p>
   <div class="home-actions">
     <a href="/publications/" class="pill-link"><i class="fas fa-book-open" aria-hidden="true"></i> Publications</a>
-    <a href="/cv/" class="pill-link"><i class="ai ai-cv" aria-hidden="true"></i> CV</a>
+    <a href="/cv/" class="pill-link"><i class="fas fa-file-lines" aria-hidden="true"></i> CV</a>
     <a href="mailto:qianrong0709@gmail.com" class="pill-link"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
   </div>
+</section>
+
+<section class="home-section" id="news">
+  <div class="section-heading">
+    <p>Latest</p>
+    <h2>News</h2>
+  </div>
+  <ul class="news-list">
+    <li>
+      <span class="news-marker"></span>
+      <p>Started building this academic homepage to collect research interests, publications, and updates.</p>
+    </li>
+    <li>
+      <span class="news-marker"></span>
+      <p>A manuscript on Molecular Generation is currently under review.</p>
+    </li>
+  </ul>
 </section>
 
 <section class="home-section">
@@ -63,6 +80,7 @@ redirect_from:
   <div class="section-heading">
     <p>Selected</p>
     <h2>Publications</h2>
+    <a href="/publications/" class="section-more">More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </div>
   <div class="publication-preview-list">
     {% assign selected_publications = site.publications | sort: "date" | reverse %}
@@ -83,14 +101,12 @@ redirect_from:
   </div>
   <ul class="timeline-list">
     <li>
-      <strong>PhD Student, AI for Drug Discovery</strong>
-      <span class="meta-line">Hong Kong Baptist University</span>
-      <span class="meta-line">Joint supervisors: Prof. Dongsheng Cao (Central South University), Prof. Aiping Lu (HKBU), and Prof. Jin Liu (HKBU)</span>
+      <strong>PhD Student, Hong Kong Baptist University</strong>
+      <span class="meta-line">AI for Drug Discovery (AIDD), with a focus on Molecular Generation.</span>
     </li>
     <li>
-      <strong>Master's Study, Computer Science</strong>
-      <span class="meta-line">School of Computer Science, Beijing Information Science and Technology University</span>
-      <span class="meta-line">Advisor: Prof. Xia Hou; research area: Natural Language Processing (NLP) and Knowledge Graphs</span>
+      <strong>Master's Study, Beijing Information Science and Technology University</strong>
+      <span class="meta-line">Computer Science, Natural Language Processing (NLP), and Knowledge Graphs.</span>
     </li>
   </ul>
 </section>
