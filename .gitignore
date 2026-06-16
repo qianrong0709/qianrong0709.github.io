@@ -23,3 +23,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local agent/project instructions
+AGENTS.md
