@@ -99,11 +99,11 @@
       "summary": "Knowledge representation for question answering services in mobile edge computing environments."
     },
     {
-      "name": "PatentNetML: Network-Based Machine Learning for Prediction of Drug Patent Cliff and Strategic Decision Making",
+      "name": "PatentNetML: A Novel Framework for Predicting Key Compounds in Patents Using Network Science and Machine Learning",
       "publisher": "Journal of Medicinal Chemistry",
       "releaseDate": "2024",
-      "website": "https://doi.org/10.1021/acs.jmedchem.3c01982",
-      "summary": "Network-based machine learning for predicting drug patent cliffs and supporting strategic decision making."
+      "website": "https://pubs.acs.org/10.1021/acs.jmedchem.3c01893",
+      "summary": "Network science and machine learning for predicting key compounds in patents."
     }
   ],
   "presentations": [],
