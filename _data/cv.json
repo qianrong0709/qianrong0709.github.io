@@ -104,6 +104,13 @@
       "releaseDate": "2024",
       "website": "https://pubs.acs.org/doi/10.1021/acs.jmedchem.3c01893",
       "summary": "Network science and machine learning for predicting key compounds in patents."
+    },
+    {
+      "name": "Structure–function conditioned molecular generation with PocketGPT enables prospective discovery of PARP1 inhibitors",
+      "publisher": "The Innovation Drug Discovery",
+      "releaseDate": "2026",
+      "website": "https://doi.org/10.59717/j.xinn-drugdisc.2026.100028",
+      "summary": "Structure–function conditioned molecular generation for the prospective discovery of PARP1 inhibitors."
     }
   ],
   "presentations": [],

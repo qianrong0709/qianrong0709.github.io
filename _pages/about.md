@@ -35,7 +35,7 @@ redirect_from:
     </li>
     <li>
       <span class="news-marker"></span>
-      <p>A manuscript on Molecular Generation is currently under review.</p>
+      <p>Our PocketGPT study on structure–function conditioned molecular generation and prospective discovery of PARP1 inhibitors was published in <em>The Innovation Drug Discovery</em>.</p>
     </li>
   </ul>
 </section>
