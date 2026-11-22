@@ -5,12 +5,18 @@ labels:
     conference_source: Conference website
     publication_source: Read the paper
     poster_source: ACS poster abstract (#405)
+    photo_navigation: Browse photos
+    previous_photo: Previous photo
+    next_photo: Next photo
   zh:
     title: 学术动态
     archive: 查看全部
     conference_source: 会议官网
     publication_source: 阅读论文
     poster_source: ACS 海报摘要（#405）
+    photo_navigation: 浏览照片
+    previous_photo: 上一张照片
+    next_photo: 下一张照片
 
 # Each entry uses shared media with separate English and Chinese copy.
 entries:
@@ -70,6 +76,25 @@ entries:
           alt: ACCP 2026 会场内，听众在台下听报告
           caption: ACCP 2026 会议报告现场。
 
+  - id: academic-group-photo-2026-04
+    date: '2026-04'
+    en:
+      date_label: April 2026
+      title: With my supervisor and senior scholars
+      summary: I was honored to be part of this group photo with my PhD supervisor, Professor Aiping Lyu, and Professor Kaixian Chen, a member of the Chinese Academy of Sciences.
+    zh:
+      date_label: 2026 年 4 月
+      title: 与导师和学界前辈合影
+      summary: 很荣幸与我的博士生导师吕爱平教授、陈凯先院士及同仁合影留念。
+    photos:
+      - path: /images/news/academic-group-photo-2026-04.webp
+        width: 1440
+        height: 810
+        en:
+          alt: Group photograph including Rong Qian, Professor Aiping Lyu, and Professor Kaixian Chen
+        zh:
+          alt: 钱蓉与吕爱平教授、陈凯先院士及同仁的合影
+
   - id: acs-fall-2025
     date: '2025-08-17'
     en:
@@ -115,3 +140,52 @@ entries:
         zh:
           alt: 沃尔特·E·华盛顿会议中心外的 ACS Fall 2025 欢迎海报
           caption: 沃尔特·E·华盛顿会议中心外景。
+
+  - id: masters-graduation-2022
+    date: '2022-06'
+    gallery_layout: featured
+    en:
+      date_label: June 2022
+      title: Master’s graduation
+      summary: I completed my master’s studies at Beijing Information Science and Technology University. I’m grateful to my advisor for her guidance and encouragement.
+    zh:
+      date_label: 2022 年 6 月
+      title: 硕士毕业
+      summary: 我在北京信息科技大学完成了硕士学业。感谢硕士期间导师的悉心指导与鼓励。
+    photos:
+      - path: /images/news/masters-graduation-2022.webp
+        width: 900
+        height: 1200
+        en:
+          alt: Rong Qian in graduation regalia with her master’s advisor outside the library
+          caption: With my master’s advisor outside the university library.
+        zh:
+          alt: 钱蓉身穿硕士学位服，与导师站在图书馆前
+          caption: 毕业时与导师在学校图书馆前留影。
+      - path: /images/news/masters-graduation-2022-research-group.webp
+        width: 600
+        height: 400
+        en:
+          alt: Members of the research group on the steps outside the university library
+          caption: Graduation photo with members of my research group.
+        zh:
+          alt: 课题组同门在学校图书馆台阶上的毕业合影
+          caption: 和课题组同门在图书馆前的毕业合影。
+      - path: /images/news/masters-graduation-2022-advisor-and-group.webp
+        width: 750
+        height: 1000
+        en:
+          alt: Rong Qian with her advisor and other members of the research group outside the library
+          caption: With my advisor and fellow group members.
+        zh:
+          alt: 钱蓉与导师及同门在图书馆前合影
+          caption: 和导师、同门在图书馆前留影。
+      - path: /images/news/masters-graduation-2022-advisor-and-labmate.webp
+        width: 750
+        height: 1000
+        en:
+          alt: Rong Qian with her advisor and a fellow group member outside the library
+          caption: A graduation photo with my advisor and a fellow group member.
+        zh:
+          alt: 钱蓉与导师及一位同门在图书馆前合影
+          caption: 毕业时与导师和同门合影。

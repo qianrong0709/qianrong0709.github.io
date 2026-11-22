@@ -1,0 +1,258 @@
+.site-archive {
+  --site-surface: var(--global-code-background-color);
+}
+
+html[data-theme="dark"] .site-archive {
+  --site-surface: #3d3d3d;
+}
+
+#main.site-archive {
+  width: 100%;
+  max-width: 61rem;
+  margin-inline: auto;
+  margin-top: clamp(2.5rem, 6vw, 5rem);
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+  animation: none;
+}
+
+.site-archive > .archive {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--global-text-color);
+}
+
+.site-archive .page__title {
+  margin: 0 0 clamp(1.6rem, 4vw, 2.8rem);
+  padding-bottom: clamp(1rem, 3vw, 1.8rem);
+  border-bottom: 1px solid var(--global-border-color);
+  color: var(--global-text-color);
+}
+
+.site-archive .archive {
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+
+  .list__item {
+    padding-right: 0;
+  }
+
+  .archive__item-title {
+    margin: 0 0 0.5rem;
+    color: var(--global-text-color);
+    overflow-wrap: anywhere;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--global-link-color);
+      text-decoration: underline;
+    }
+  }
+
+  .archive__item:hover .archive__item-title {
+    text-decoration: none;
+  }
+}
+
+.site-archive--publications {
+  .wordwrap {
+    max-width: 66ch;
+    color: var(--global-text-color-light);
+  }
+
+  .archive > h2:not(.page__title) {
+    margin: 2.4rem 0 0.2rem;
+    color: var(--global-text-color-light);
+  }
+
+  hr {
+    margin: 0;
+    border-top-color: var(--global-border-color);
+  }
+
+  .list__item {
+    padding: 1.45rem 0;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .archive__item > p {
+    max-width: 76ch;
+    margin: 0.5rem 0 0;
+    line-height: 1.7;
+  }
+
+  .archive__item > p:empty {
+    display: none;
+  }
+
+  .archive__item > p:first-of-type {
+    color: var(--global-text-color-light);
+  }
+}
+
+.site-archive .academic-news {
+  --news-date-column: 9.5rem;
+  --news-date-gap: clamp(1.25rem, 3vw, 2rem);
+  --news-body-indent: 0rem;
+
+  > .news-entry {
+    margin: 0;
+    padding: clamp(1.55rem, 4vw, 2.45rem) 0;
+    border-top-color: var(--global-border-color);
+    scroll-margin-top: 8rem;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    > header h2 {
+      margin: 0 0 0.5rem;
+      color: var(--global-text-color);
+    }
+
+    > :not(header) {
+      margin-inline-start: var(--news-body-indent);
+    }
+  }
+
+  .news-entry-meta {
+    gap: 0.15rem 0.65rem;
+    margin: 0 0 0.5rem;
+    color: var(--global-text-color-light);
+  }
+
+  .news-entry-summary {
+    max-width: 66ch;
+    margin-top: 0.2rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.75;
+  }
+
+  .news-source {
+    display: table;
+  }
+
+  .news-gallery > figure:only-child {
+    justify-self: start;
+  }
+
+  .news-gallery.is-carousel {
+    width: auto;
+    margin-inline-end: 0;
+    border-color: var(--global-border-color);
+    background: var(--site-surface);
+  }
+}
+
+@media (min-width: 720px) {
+  .site-archive .academic-news {
+    --news-body-indent: calc(var(--news-date-column) + var(--news-date-gap));
+
+    .news-entry > header {
+      display: grid;
+      grid-template-columns: var(--news-date-column) minmax(0, 1fr);
+      align-items: baseline;
+      gap: var(--news-date-gap);
+    }
+
+    .news-entry-meta {
+      display: grid;
+    }
+  }
+}
+
+.site-archive .blog-index {
+  .blog-intro {
+    margin-bottom: 1.6rem;
+    color: var(--global-text-color-light);
+  }
+
+  .blog-directions {
+    gap: 0 clamp(1.2rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+
+    section {
+      padding: 1rem 0;
+      border: 0;
+      border-top: 1px solid var(--global-border-color);
+      border-radius: 0;
+      background: none;
+    }
+
+    .blog-kicker {
+      display: none;
+    }
+
+    h2 {
+      margin: 0 0 0.4rem;
+    }
+
+    p {
+      color: var(--global-text-color-light);
+    }
+  }
+
+  .blog-list-heading {
+    margin-bottom: 1rem;
+    border-color: var(--global-border-color);
+  }
+
+  .blog-filters button[aria-pressed="true"] {
+    border-color: var(--global-link-color);
+    background: var(--site-surface);
+    color: var(--global-link-color);
+  }
+
+  .blog-empty {
+    border: 1px solid var(--global-border-color);
+    border-radius: 0.5rem;
+    background: var(--site-surface);
+    color: var(--global-text-color-light);
+
+    h3 {
+      color: var(--global-text-color);
+    }
+  }
+}
+
+.site-archive--cv {
+  .archive > h2 {
+    margin: 2.1rem 0 1.15rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid var(--global-border-color);
+  }
+
+  .archive > .page__title + h2 {
+    margin-top: 0;
+  }
+
+  .timeline-list {
+    max-width: 68ch;
+
+    li::before {
+      background: var(--global-link-color);
+    }
+
+    .meta-line {
+      color: var(--global-text-color-light);
+    }
+  }
+
+  .research-tags li {
+    border-color: var(--global-border-color);
+    border-radius: 0.35rem;
+    background: var(--site-surface);
+    color: var(--global-text-color-light);
+  }
+
+  .profile-icons a {
+    border-color: var(--global-border-color);
+  }
+}

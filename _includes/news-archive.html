@@ -17,14 +17,25 @@
         <p class="news-source"><a href="{{ entry.poster_url }}">{{ news_labels.poster_source }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
       {% endif %}
       {% if entry.photos %}
-        <div class="news-gallery{% if entry.photos.size == 3 %} news-gallery--three{% endif %}">
+        <div class="news-gallery{% if entry.gallery_layout == 'featured' %} news-gallery--featured{% elsif entry.photos.size == 3 %} news-gallery--three{% endif %}"{% if entry.photos.size > 1 %} data-news-carousel{% endif %}>
           {% for photo in entry.photos %}
             {% assign description = photo[news_lang] %}
             <figure{% if photo.width < photo.height %} class="news-photo--portrait"{% endif %}>
               <img src="{{ photo.path | relative_url }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ description.alt | escape }}" loading="lazy" decoding="async">
-              <figcaption>{{ description.caption }}</figcaption>
+              {% if description.caption %}<figcaption>{{ description.caption }}</figcaption>{% endif %}
             </figure>
           {% endfor %}
+          {% if entry.photos.size > 1 %}
+            <div class="news-gallery-controls" role="group" aria-label="{{ news_labels.photo_navigation }}" hidden>
+              <button class="news-gallery-arrow" type="button" data-news-photo-previous aria-label="{{ news_labels.previous_photo }}" title="{{ news_labels.previous_photo }}">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <span class="news-gallery-counter" role="status" aria-atomic="true">1 / {{ entry.photos.size }}</span>
+              <button class="news-gallery-arrow" type="button" data-news-photo-next aria-label="{{ news_labels.next_photo }}" title="{{ news_labels.next_photo }}">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          {% endif %}
         </div>
       {% endif %}
       {% if entry.source %}

@@ -11,8 +11,8 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
+
 <ul class="timeline-list">
   <li>
     <strong>PhD Student</strong>
@@ -28,8 +28,8 @@ Education
   </li>
 </ul>
 
-Research Areas
-======
+## Research Areas
+
 <ul class="research-tags">
   <li>AIDD</li>
   <li>AI for Science</li>
@@ -42,8 +42,8 @@ Research Areas
   <li>Knowledge Graphs</li>
 </ul>
 
-Publications
-======
+## Publications
+
 {% assign publications = site.publications | where: "lang", page.lang | sort: "date" | reverse %}
 {% if publications.size > 0 %}
 <ul>{% for post in publications %}
@@ -53,8 +53,8 @@ Publications
 Selected publications will be updated here.
 {% endif %}
 
-Links
-======
+## Links
+
 <ul class="profile-icons">
   <li><a href="https://scholar.google.com/citations?user=q2r2jrsAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
   <li><a href="https://github.com/qianrong0709" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>

@@ -9,8 +9,8 @@ author_profile: true
 
 {% include base_path %}
 
-教育经历
-======
+## 教育经历
+
 <ul class="timeline-list">
   <li>
     <strong>博士在读</strong>
@@ -26,8 +26,8 @@ author_profile: true
   </li>
 </ul>
 
-研究方向
-======
+## 研究方向
+
 <ul class="research-tags">
   <li>AI 药物发现</li>
   <li>AI for Science</li>
@@ -40,8 +40,8 @@ author_profile: true
   <li>知识图谱</li>
 </ul>
 
-论文
-======
+## 论文
+
 {% assign publications = site.publications | where: "lang", page.lang | sort: "date" | reverse %}
 {% if publications.size > 0 %}
 <ul>{% for post in publications %}
@@ -51,8 +51,8 @@ author_profile: true
 论文列表将在此更新。
 {% endif %}
 
-相关链接
-======
+## 相关链接
+
 <ul class="profile-icons">
   <li><a href="https://scholar.google.com/citations?user=q2r2jrsAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
   <li><a href="https://github.com/qianrong0709" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>

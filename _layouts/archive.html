@@ -12,8 +12,12 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
-  {% include sidebar.html %}
+{% assign site_archive_keys = 'academic-news,blog,publications,cv' | split: ',' %}
+{% assign site_archive = false %}
+{% if site_archive_keys contains page.translation_key %}{% assign site_archive = true %}{% endif %}
+
+<div id="main" role="main"{% if site_archive %} class="site-archive site-archive--{{ page.translation_key }}"{% endif %}>
+  {% unless site_archive %}{% include sidebar.html %}{% endunless %}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
