@@ -1,0 +1,41 @@
+---
+layout: default
+author_profile: true
+---
+
+{% assign blog_lang = page.lang | default: 'en' %}
+{% assign blog_text = site.data.blog[blog_lang] %}
+{% assign post_kind = page.blog_category | default: 'field' %}
+{% assign blog_url = '/blog/' %}
+{% if blog_lang == 'zh' %}{% assign blog_url = '/zh/blog/' %}{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="page__inner-wrap">
+      <header class="blog-article-header">
+        <a class="blog-back" href="{{ blog_url | relative_url }}"><span aria-hidden="true">←</span> {{ blog_text.back }}</a>
+        <p class="blog-kicker">{{ blog_text[post_kind] | default: blog_text.field }}</p>
+        <h1 class="page__title" itemprop="headline">{{ page.title | escape }}</h1>
+        <div class="blog-post-meta">
+          <span itemprop="author">{{ blog_text.author }}</span>
+          <span>{{ blog_text.published }} <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y-%m-%d' }}</time></span>
+          {% if page.last_modified_at %}
+            <span>{{ blog_text.updated }} <time itemprop="dateModified" datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%Y-%m-%d' }}</time></span>
+          {% endif %}
+        </div>
+        {% if page.tags.size > 0 %}
+          <ul class="blog-post-tags" aria-label="{{ blog_text.tags }}">
+            {% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </header>
+      <section class="page__content blog-prose" itemprop="articleBody">
+        {{ content }}
+      </section>
+      <footer class="blog-article-footer">
+        <a class="blog-back" href="{{ blog_url | relative_url }}"><span aria-hidden="true">←</span> {{ blog_text.back }}</a>
+      </footer>
+    </div>
+  </article>
+</div>

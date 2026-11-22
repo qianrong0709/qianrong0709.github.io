@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: home
 permalink: /
 excerpt: "Rong Qian"
 author_profile: true
@@ -83,7 +85,7 @@ redirect_from:
     <a href="/publications/" class="section-more">More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </div>
   <div class="publication-preview-list">
-    {% assign selected_publications = site.publications | sort: "date" | reverse %}
+    {% assign selected_publications = site.publications | where: "lang", page.lang | sort: "date" | reverse %}
     {% for post in selected_publications limit: 2 %}
       <article class="publication-preview">
         <p class="publication-venue">{{ post.venue }}</p>
@@ -92,6 +94,15 @@ redirect_from:
       </article>
     {% endfor %}
   </div>
+</section>
+
+<section class="home-section" id="writing">
+  <div class="section-heading">
+    <p>Writing</p>
+    <h2>Blog</h2>
+    <a href="{{ '/blog/' | relative_url }}" class="section-more">Explore <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <p>Paper walkthroughs and reflections on AI for Drug Discovery: notes on methods, the ideas behind them, and questions worth exploring.</p>
 </section>
 
 <section class="home-section">

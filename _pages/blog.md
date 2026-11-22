@@ -2,9 +2,10 @@
 layout: archive
 title: "Blog"
 permalink: /blog/
+lang: en
+translation_key: blog
 author_profile: true
+excerpt: "Paper notes and reflections on molecular generation, AI for drug discovery, and the ideas behind them."
 ---
 
-Notes and longer-form posts will be updated here.
-
-For brief research updates, please see the News section on the [home page](/#news).
+{% include blog-index.html %}

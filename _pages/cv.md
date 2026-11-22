@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: cv
 layout: archive
 title: "CV"
 permalink: /cv/
@@ -42,8 +44,9 @@ Research Areas
 
 Publications
 ======
-{% if site.publications.size > 0 %}
-<ul>{% for post in site.publications reversed %}
+{% assign publications = site.publications | where: "lang", page.lang | sort: "date" | reverse %}
+{% if publications.size > 0 %}
+<ul>{% for post in publications %}
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 {% else %}

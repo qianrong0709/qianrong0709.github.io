@@ -3,9 +3,10 @@ layout: compress
 ---
 
 {% include base_path %}
+{% include language-context.html %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %} data-font-style="{{ site.font_style | default: 'modern' }}">
+<html lang="{{ ui.html_lang }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %} data-font-style="{{ site.font_style | default: 'modern' }}">
   <head>
     {% include head.html %}
     {% include head/custom.html %}

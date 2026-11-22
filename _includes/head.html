@@ -1,4 +1,5 @@
 {% include base_path %}
+{% include language-context.html %}
 
 <meta charset="utf-8">
 
@@ -12,5 +13,13 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+{% if page.translation_key %}
+<link rel="alternate" hreflang="{{ ui.html_lang }}" href="{{ page.url | absolute_url }}">
+{% if alternate_page %}<link rel="alternate" hreflang="{{ site.data.i18n[other_lang].html_lang }}" href="{{ alternate_page.url | absolute_url }}">{% endif %}
+{% endif %}
+<script defer src="{{ '/assets/js/language.js' | relative_url }}"></script>
+{% if page.translation_key == 'blog' %}<script defer src="{{ '/assets/js/blog.js' | relative_url }}"></script>{% endif %}

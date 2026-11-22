@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: publications
 layout: archive
 title: "Publications"
 permalink: /publications/
@@ -11,7 +13,8 @@ author_profile: true
 
 {% include base_path %}
 
-{% if site.publications.size == 0 %}
+{% assign publications = site.publications | where: "lang", page.lang | sort: "date" | reverse %}
+{% if publications.size == 0 %}
   <p>Selected publications will be updated here.</p>
 {% endif %}
 
@@ -19,7 +22,7 @@ author_profile: true
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in publications %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -31,7 +34,7 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% for post in publications %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}

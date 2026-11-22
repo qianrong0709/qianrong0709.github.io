@@ -1,0 +1,23 @@
+{% assign page_lang = page.lang | default: 'en' %}
+{% assign ui = site.data.i18n[page_lang] %}
+{% assign page_locale = ui.locale %}
+{% assign home_url = ui.home_url %}
+{% assign other_lang = ui.other_lang %}
+{% assign alternate_page = nil %}
+{% if page.translation_key %}
+  {% assign language_documents = site.pages | concat: site.posts | concat: site.publications %}
+  {% for candidate in language_documents %}
+    {% if candidate.translation_key == page.translation_key and candidate.lang == other_lang and candidate.published != false %}
+      {% assign alternate_page = candidate %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign alternate_url = alternate_page.url %}
+{% unless alternate_url %}
+  {% if page.collection == 'posts' %}
+    {% assign alternate_url = site.data.i18n[other_lang].blog_url | append: '?translation=unavailable' %}
+  {% else %}
+    {% assign alternate_url = site.data.i18n[other_lang].home_url %}
+  {% endif %}
+{% endunless %}

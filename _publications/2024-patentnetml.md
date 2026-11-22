@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: publication-patentnetml
 title: "PatentNetML: A Novel Framework for Predicting Key Compounds in Patents Using Network Science and Machine Learning"
 collection: publications
 category: manuscripts

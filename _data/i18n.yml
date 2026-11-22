@@ -1,0 +1,56 @@
+en:
+  locale: en-US
+  html_lang: en
+  other_lang: zh
+  home_url: /
+  blog_url: /blog/
+  switch_label: 中文
+  switch_title: Switch to Chinese
+  navigation_label: Main navigation
+  theme: Switch light or dark theme
+  follow: Links
+  email: Email
+  website: Website
+  feed: Subscribe
+  published: Published
+  published_in: Published in
+  citation: Recommended citation
+  paper: View paper
+  slides: Slides
+  bibtex: BibTeX
+  updated: Last updated
+  powered: Built with
+  name: Rong Qian
+  bio: 'PhD Student in <b>AIDD</b><br>Molecular Generation & AI for Science.'
+  location: Hong Kong
+  employer: Hong Kong Baptist University
+  description: Research, publications, and notes on AI for drug discovery by Rong Qian.
+  missing_translation: This article is not available in English yet. You can explore other posts here.
+zh:
+  locale: zh-CN
+  html_lang: zh-Hans
+  other_lang: en
+  home_url: /zh/
+  blog_url: /zh/blog/
+  switch_label: EN
+  switch_title: Switch to English
+  navigation_label: 主导航
+  theme: 切换浅色或深色模式
+  follow: 联系
+  email: 邮箱
+  website: 网站
+  feed: 订阅更新
+  published: 发布于
+  published_in: 发表期刊
+  citation: 引用信息
+  paper: 阅读论文
+  slides: 演示文稿
+  bibtex: BibTeX
+  updated: 最近更新
+  powered: 基于
+  name: 钱蓉 Rong Qian
+  bio: '香港浸会大学博士生<br>AI 药物发现 · 分子生成 · AI for Science'
+  location: 香港
+  employer: 香港浸会大学
+  description: 钱蓉的学术主页，分享 AI 药物发现研究、论文成果、论文解读与领域随笔。
+  missing_translation: 这篇文章暂时还没有中文版，你可以在这里阅读其他文章。

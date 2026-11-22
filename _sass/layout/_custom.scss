@@ -14,7 +14,19 @@ html[data-font-style="academic"] body {
 }
 
 html[data-font-style="modern"] body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.sidebar .author__name {
+  font-family: "Newsreader", Georgia, "Times New Roman", Times, serif;
+}
+
+.section-heading p,
+.publication-venue {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 html[data-font-style="soft"] body {
@@ -145,8 +157,8 @@ html[data-font-style="soft"] body {
   margin: 0;
   color: var(--global-base-color);
   font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -268,8 +280,8 @@ html[data-font-style="soft"] body {
   padding-left: 0.35rem;
   color: var(--global-text-color-light);
   font-size: 0.72em !important;
-  font-weight: 700;
-  letter-spacing: 0;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 

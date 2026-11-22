@@ -1,4 +1,5 @@
 {% include base_path %}
+{% include language-context.html %}
 
 <!-- begin SEO -->
 {% if site.url %}
@@ -20,7 +21,7 @@
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
 
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
+{% assign seo_description = page.description | default: page.excerpt | default: ui.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
 {% endif %}
@@ -113,7 +114,7 @@
 <!-- end SEO -->
 
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+<meta property="og:locale" content="{{ page_locale | replace: "-", "_" }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}

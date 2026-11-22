@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: publication-knowledge-representation-qa-mobile-edge
 title: "A Knowledge Representation Method for Question Answering Service in Mobile Edge Computing Environment"
 collection: publications
 category: manuscripts

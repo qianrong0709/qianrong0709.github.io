@@ -1,0 +1,33 @@
+.bilingual-header { display: flex; align-items: center; gap: 1.4rem; padding: 1rem; max-width: 1280px; }
+.site-brand {
+  display: inline-flex; align-items: baseline; gap: .5rem; margin-right: auto; color: var(--global-text-color); font-weight: 700; text-decoration: none; white-space: nowrap;
+  span { color: var(--global-text-color-light); font-size: .75em; font-weight: 400; }
+}
+.primary-navigation {
+  display: flex; gap: 1.3rem;
+  a { color: var(--global-text-color); text-decoration: none; font-size: .88em; padding: .4rem 0; }
+  a[aria-current="page"] { color: var(--global-link-color); box-shadow: 0 2px 0 var(--global-link-color); }
+}
+.header-tools { display: flex; align-items: center; gap: .65rem; }
+.language-switch, .theme-button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; min-width: 40px; border: 1px solid var(--global-border-color); border-radius: 6px; color: var(--global-text-color); background: var(--global-bg-color); font: inherit; font-size: .8em; text-decoration: none; cursor: pointer; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
+.translation-notice { margin: 1rem 0; padding: .8rem 1rem; border-left: 3px solid var(--global-link-color); background: var(--global-code-background-color); }
+html[lang="zh-Hans"] {
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+  h1, h2, h3, h4, h5, h6, .page__title, .archive__item-title, .sidebar .author__name { font-family: inherit; line-height: 1.5; }
+  .page__content p, .page__content li, .archive p { line-height: 1.9; }
+}
+@media (max-width: 680px) {
+  .bilingual-header { flex-wrap: wrap; gap: .4rem 1rem; padding: .55rem 1rem; }
+  .primary-navigation { order: 3; width: 100%; justify-content: space-between; gap: .5rem; }
+  .primary-navigation a { min-height: 40px; display: inline-flex; align-items: center; }
+  .site-brand { font-size: 1rem; }
+  .header-tools { gap: .4rem; }
+  .sidebar { padding-top: 0; }
+}
+
+/* Keep secondary text and links readable on the light background. */
+:root:not([data-theme="dark"]) {
+  --global-text-color-light: #66717a;
+  --global-link-color: #26758a;
+}

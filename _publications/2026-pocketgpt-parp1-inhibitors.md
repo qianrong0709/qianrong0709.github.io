@@ -1,4 +1,6 @@
 ---
+lang: en
+translation_key: publication-pocketgpt-parp1-inhibitors
 title: "Structure–function conditioned molecular generation with PocketGPT enables prospective discovery of PARP1 inhibitors"
 collection: publications
 category: manuscripts
