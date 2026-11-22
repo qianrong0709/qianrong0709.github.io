@@ -25,22 +25,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-section" id="news">
-  <div class="section-heading">
-    <p>Latest</p>
-    <h2>News</h2>
-  </div>
-  <ul class="news-list">
-    <li>
-      <span class="news-marker"></span>
-      <p>Started building this academic homepage to collect research interests, publications, and updates.</p>
-    </li>
-    <li>
-      <span class="news-marker"></span>
-      <p>Our PocketGPT study on structure–function conditioned molecular generation and prospective discovery of PARP1 inhibitors was published in <em>The Innovation Drug Discovery</em>.</p>
-    </li>
-  </ul>
-</section>
+{% include news-preview.html %}
 
 <section class="home-section">
   <div class="section-heading">

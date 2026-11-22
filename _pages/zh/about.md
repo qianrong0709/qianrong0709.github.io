@@ -22,22 +22,7 @@ author_profile: true
   </div>
 </section>
 
-<section class="home-section" id="news">
-  <div class="section-heading">
-    <p>近况</p>
-    <h2>最新动态</h2>
-  </div>
-  <ul class="news-list">
-    <li>
-      <span class="news-marker"></span>
-      <p>开始建设个人学术主页，记录研究兴趣、论文与近期动态。</p>
-    </li>
-    <li>
-      <span class="news-marker"></span>
-      <p>我们的 PocketGPT 研究已发表于 <em>The Innovation Drug Discovery</em>，围绕结构–功能条件分子生成，通过前瞻性实验发现了 PARP1 抑制剂。</p>
-    </li>
-  </ul>
-</section>
+{% include news-preview.html %}
 
 <section class="home-section">
   <div class="section-heading">

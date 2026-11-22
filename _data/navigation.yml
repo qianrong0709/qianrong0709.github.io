@@ -6,6 +6,9 @@ en:
     url: /publications/
     key: publications
     collection: publications
+  - title: News
+    url: /news/
+    key: academic-news
   - title: Blog
     url: /blog/
     key: blog
@@ -21,6 +24,9 @@ zh:
     url: /zh/publications/
     key: publications
     collection: publications
+  - title: 动态
+    url: /zh/news/
+    key: academic-news
   - title: 博客
     url: /zh/blog/
     key: blog

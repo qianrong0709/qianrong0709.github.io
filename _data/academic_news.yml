@@ -1,0 +1,115 @@
+labels:
+  en:
+    title: Academic News
+    archive: All updates
+    conference_source: Conference website
+    publication_source: Read the paper
+    poster_source: ACS poster abstract (#405)
+  zh:
+    title: 学术动态
+    archive: 查看全部
+    conference_source: 会议官网
+    publication_source: 阅读论文
+    poster_source: ACS 海报摘要（#405）
+
+# Each entry uses shared media with separate English and Chinese copy.
+entries:
+  - id: pocketgpt-publication
+    date: '2026-07-15'
+    en:
+      date_label: July 2026
+      title: PocketGPT published in The Innovation Drug Discovery
+      summary: Our PocketGPT study on structure–function conditioned molecular generation and prospective discovery of PARP1 inhibitors was published in <em>The Innovation Drug Discovery</em>.
+    zh:
+      date_label: 2026 年 7 月
+      title: PocketGPT 研究发表
+      summary: 我们的 PocketGPT 研究已发表于 <em>The Innovation Drug Discovery</em>，围绕结构–功能条件分子生成，通过前瞻性实验发现了 PARP1 抑制剂。
+    source: https://doi.org/10.59717/j.xinn-drugdisc.2026.100028
+    source_label: publication_source
+
+  - id: accp-2026
+    date: '2026-07-09'
+    en:
+      date_label: July 9–11, 2026
+      title: ACCP 2026 in Bangkok
+      location: Bangkok, Thailand
+      summary: I attended the 25th Asian Conference on Clinical Pharmacy in Bangkok. I presented a poster on using PocketGPT, a pocket-guided molecular design framework, to prospectively discover a nanomolar PARP1 inhibitor.
+    zh:
+      date_label: 2026 年 7 月 9–11 日
+      title: 参加曼谷 ACCP 2026
+      location: 泰国曼谷
+      summary: 我在泰国曼谷参加了第 25 届亚洲临床药学大会（ACCP 2026）。我在会上展示了 PocketGPT 研究海报，介绍如何利用蛋白口袋引导分子设计，并前瞻性发现纳摩尔级 PARP1 抑制剂。
+    source: https://accp2026bangkok.pharmacycouncil.org/en
+    source_label: conference_source
+    photos:
+      - path: /images/news/accp-2026-poster.webp
+        width: 1080
+        height: 1440
+        en:
+          alt: Rong Qian beside her poster on PocketGPT and the prospective discovery of a PARP1 inhibitor
+          caption: Presenting the PocketGPT study at ACCP 2026.
+        zh:
+          alt: 钱蓉站在介绍 PocketGPT 与 PARP1 抑制剂发现的研究海报旁
+          caption: 在 ACCP 2026 展示 PocketGPT 研究海报。
+      - path: /images/news/accp-2026-venue.webp
+        width: 1440
+        height: 1080
+        en:
+          alt: Rong Qian in front of the Borderless Pharmacy Practice conference backdrop
+          caption: At the ACCP 2026 venue in Bangkok.
+        zh:
+          alt: 钱蓉站在 ACCP 大会主题背景板前
+          caption: 曼谷 ACCP 2026 会场留影。
+      - path: /images/news/accp-2026-session.webp
+        width: 1440
+        height: 810
+        en:
+          alt: Audience attending a conference talk at ACCP 2026
+          caption: A conference session at ACCP 2026.
+        zh:
+          alt: ACCP 2026 会场内，听众在台下听报告
+          caption: ACCP 2026 会议报告现场。
+
+  - id: acs-fall-2025
+    date: '2025-08-17'
+    en:
+      date_label: August 17–21, 2025
+      title: ACS Fall 2025
+      location: Washington, D.C., USA
+      summary: I attended the American Chemical Society’s fall meeting in Washington, D.C., and presented “Structure-function dual-driven molecular generation for targeted drug discovery” on August 19 (Poster Board #405).
+    zh:
+      date_label: 2025 年 8 月 17–21 日
+      title: 参加 ACS Fall 2025
+      location: 美国华盛顿特区
+      summary: 我在美国华盛顿特区参加了美国化学会秋季会议（ACS Fall 2025），并于 8 月 19 日展示了关于结构与功能协同引导分子生成、用于靶向药物发现的研究海报（展板 #405）。
+    source: https://www.acs.org/events/acs-meetings/past-meetings.html
+    source_label: conference_source
+    poster_url: https://acs.digitellinc.com/p/s/structure-function-dual-driven-molecular-generation-for-targeted-drug-discovery-poster-board-405-636618
+    photos:
+      - path: /images/news/acs-fall-2025-poster.webp
+        width: 1440
+        height: 1082
+        en:
+          alt: Rong Qian beside her poster on structure–function guided molecular generation at ACS Fall 2025
+          caption: Poster session at ACS Fall 2025.
+        zh:
+          alt: 钱蓉站在 ACS Fall 2025 的分子生成研究海报旁
+          caption: ACS Fall 2025 海报展示现场。
+      - path: /images/news/acs-fall-2025-venue.webp
+        width: 1440
+        height: 1080
+        en:
+          alt: Rong Qian in front of the ACS Fall 2025 backdrop
+          caption: At the ACS Fall 2025 meeting in Washington, D.C.
+        zh:
+          alt: 钱蓉站在 ACS Fall 2025 大会背景板前
+          caption: 华盛顿 ACS Fall 2025 会场留影。
+      - path: /images/news/acs-fall-2025-convention-center.webp
+        width: 810
+        height: 1440
+        en:
+          alt: ACS Fall 2025 welcome banner outside the Walter E. Washington Convention Center
+          caption: The Walter E. Washington Convention Center.
+        zh:
+          alt: 沃尔特·E·华盛顿会议中心外的 ACS Fall 2025 欢迎海报
+          caption: 沃尔特·E·华盛顿会议中心外景。

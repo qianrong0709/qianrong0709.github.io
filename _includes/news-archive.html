@@ -1,0 +1,35 @@
+{% assign news_lang = page.lang | default: 'en' %}
+{% assign news_labels = site.data.academic_news.labels[news_lang] %}
+{% assign entries = site.data.academic_news.entries | sort: 'date' | reverse %}
+<div class="academic-news">
+  {% for entry in entries %}
+    {% assign item = entry[news_lang] %}
+    <article class="news-entry" id="{{ entry.id }}">
+      <header>
+        <p class="news-entry-meta">
+          <time datetime="{{ entry.date }}">{{ item.date_label }}</time>
+          {% if item.location %}<span>{{ item.location }}</span>{% endif %}
+        </p>
+        <h2>{{ item.title }}</h2>
+      </header>
+      <p class="news-entry-summary">{{ item.summary }}</p>
+      {% if entry.poster_url %}
+        <p class="news-source"><a href="{{ entry.poster_url }}">{{ news_labels.poster_source }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+      {% endif %}
+      {% if entry.photos %}
+        <div class="news-gallery{% if entry.photos.size == 3 %} news-gallery--three{% endif %}">
+          {% for photo in entry.photos %}
+            {% assign description = photo[news_lang] %}
+            <figure{% if photo.width < photo.height %} class="news-photo--portrait"{% endif %}>
+              <img src="{{ photo.path | relative_url }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ description.alt | escape }}" loading="lazy" decoding="async">
+              <figcaption>{{ description.caption }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if entry.source %}
+        <p class="news-source"><a href="{{ entry.source }}">{{ news_labels[entry.source_label] }} <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>

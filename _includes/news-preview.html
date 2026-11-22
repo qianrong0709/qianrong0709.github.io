@@ -1,0 +1,19 @@
+{% assign news_lang = page.lang | default: 'en' %}
+{% assign news_labels = site.data.academic_news.labels[news_lang] %}
+{% assign news_index = site.pages | where: 'translation_key', 'academic-news' | where: 'lang', news_lang | first %}
+{% assign recent_entries = site.data.academic_news.entries | sort: 'date' | reverse %}
+<section class="home-section" id="news">
+  <div class="section-heading news-preview-heading">
+    <h2>{{ news_labels.title }}</h2>
+    <a class="section-more" href="{{ news_index.url | relative_url }}">{{ news_labels.archive }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <ul class="news-preview-list">
+    {% for entry in recent_entries limit: 3 %}
+      {% assign item = entry[news_lang] %}
+      <li>
+        <time datetime="{{ entry.date }}">{{ item.date_label }}</time>
+        <a class="news-preview-title" href="{{ news_index.url | relative_url }}#{{ entry.id }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
