@@ -76,12 +76,14 @@ entries:
       date_label: August 17–21, 2025
       title: ACS Fall 2025
       location: Washington, D.C., USA
-      summary: I attended the American Chemical Society’s fall meeting in Washington, D.C., and presented “Structure-function dual-driven molecular generation for targeted drug discovery” on August 19 (Poster Board #405).
+      summary: >-
+        I attended the American Chemical Society’s fall meeting in Washington, D.C., and presented “Structure-function dual-driven molecular generation for targeted drug discovery” on August 19 (Poster Board #405).
     zh:
       date_label: 2025 年 8 月 17–21 日
       title: 参加 ACS Fall 2025
       location: 美国华盛顿特区
-      summary: 我在美国华盛顿特区参加了美国化学会秋季会议（ACS Fall 2025），并于 8 月 19 日展示了关于结构与功能协同引导分子生成、用于靶向药物发现的研究海报（展板 #405）。
+      summary: >-
+        我在美国华盛顿特区参加了美国化学会秋季会议（ACS Fall 2025），并于 8 月 19 日展示了关于结构与功能协同引导分子生成、用于靶向药物发现的研究海报（展板 #405）。
     source: https://www.acs.org/events/acs-meetings/past-meetings.html
     source_label: conference_source
     poster_url: https://acs.digitellinc.com/p/s/structure-function-dual-driven-molecular-generation-for-targeted-drug-discovery-poster-board-405-636618

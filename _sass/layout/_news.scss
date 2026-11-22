@@ -167,7 +167,7 @@
 }
 
 @media (min-width: 720px) {
-  .news-gallery--three > .news-photo--portrait {
+  .news-gallery--three > figure.news-photo--portrait {
     grid-column: 2;
     grid-row: 1 / span 2;
     max-width: none;
